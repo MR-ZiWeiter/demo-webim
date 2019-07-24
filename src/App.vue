@@ -1,23 +1,28 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <section class="AppComponent">
+    <vue-hx-message-component></vue-hx-message-component>
+  </section>
 </template>
 
 <script>
+import VueHxMessageComponent from '@/components/hxmessage'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    'vue-hx-message-component': VueHxMessageComponent
+  },
+  data () {
+    return {}
+  },
+  mounted () {
+    console.log('开启环信即时聊天通讯')
+    // 更新环信用户
+    this.$WebImOptions.user = 'username'
+    // 登录操作
+    this.$imConn.open(this.$WebImOptions)
+  }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+  @import url('//at.alicdn.com/t/font_1313448_8is417ayo1o.css')
 </style>

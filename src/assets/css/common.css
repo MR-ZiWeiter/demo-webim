@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial';
+  scroll-behavior: auto;
+}
+
+body{
+  font-size: 16px;
+  font-family: Arial, 'Microsoft YaHei';
+  overflow: auto;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+a{
+  text-decoration: none;
+  color: #646464;
+  outline: none;
+}
+
+a:hover{
+  color: #1281fc;
+}
+
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button.disabled,
+button[disabled]{
+  background-color: #999999;
+  color: #ffffff;
+}
+
+ul,ol,li,dl,dt,dd{
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #444444;
+  font-weight: normal;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.bg-yellow{
+  background-color: #ffae00;
+}
+
+.bg-gray{
+  background-color: #909090;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 1800px) {
+  html,body{
+    font-size: 15.5px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  html,body{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  html,body{
+    font-size: 14.5px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  html,body{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html,body{
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  html,body{
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 755px) and (max-width: 1300px) {
+  html,body{
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 755px) {
+  html,body{
+    font-size: 9.5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  html,body{
+    font-size: 9px;
+  }
+}
