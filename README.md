@@ -1,15 +1,15 @@
 # webim-demo
 
-> A Vue.js project
+> 该项目基于Vue提供的一个hx-websdk的demo
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+npm install || yarn
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run dev || yarn start
 
 # build for production with minification
 npm run build
